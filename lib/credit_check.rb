@@ -2,13 +2,18 @@
 
 # Your Luhn Algorithm Here
 def is_luhn_valid?(card_number)
- double_eod = 
- double_eod > 9 add digits
- if sum_all_digits % 10
-    puts = "The number is valid."   
+    number = card_number.to_i
+    array_number = number.digits.reverse
+    puts array_number
+    
+    # double_eod = 
+    # double_eod > 9 add digits
+    # if sum_all_digits % 10
+    # puts = "The number is valid."   
 end
-end
+
 card_number="5541808923795240"
+
 
 def luhn_valid?(card_number)
   cc_digits = card_number.to_s.reverse.chars.map(&:to_i)
@@ -28,6 +33,7 @@ def luhn_valid?(card_number)
   end
 end
 luhn_valid?("5541808923795240")
+end
 # Output
 ## If it is valid, print "The number [card number] is valid!"
 ## If it is invalid, print "The number [card number] is invalid!"
